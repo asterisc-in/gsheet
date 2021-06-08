@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mybg"
+    tools:context=".AdmissionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingLeft="@dimen/activity_padding"
+        android:paddingRight="@dimen/activity_padding">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/lr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:padding="30dp"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:text="Regstration"
+                        android:textSize="30sp" />
+
+                    <EditText
+                        android:id="@+id/fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_text_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:hint="Full Name"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_text_space" />
+                    <RadioGroup
+                        android:id="@+id/radioG"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/activity_text_space">
+
+                        <RadioButton
+                            android:id="@+id/rFemale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawablePadding="8dp"
+                            android:text="Female" />
+
+                        <RadioButton
+                            android:id="@+id/rMale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:drawablePadding="10dp"
+                            android:text="Male" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:hint="Email"
+                        android:maxLines="1"
+                        android:padding="@dimen/activity_text_space" />
+
+                    <EditText
+                        android:id="@+id/mymobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:maxLines="1"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:inputType="phone"
+                        android:hint="Mobile (Whats App)"
+                        android:padding="@dimen/activity_text_space" />
+
+                    <EditText
+                        android:id="@+id/qualification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:hint="Qualification"
+                        android:padding="@dimen/activity_text_space" />
+
+                    <EditText
+                        android:id="@+id/college"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:ems="10"
+                        android:maxLines="1"
+                        android:hint="College Name"
+                        android:padding="@dimen/activity_text_space" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_space"
+                        android:background="@drawable/rounded_edittext"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_text_space">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Course "
+                            android:textSize="22sp" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="C#"
+                            android:id="@+id/chb1"
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Java"
+                            android:id="@+id/chb2"
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Android"
+                            android:id="@+id/chb3"
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Python"
+                            android:id="@+id/chb4"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Robotics"
+                            android:id="@+id/chb5"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Web Design"
+                            android:id="@+id/chb6"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Php"
+                            android:id="@+id/chb7"
+
+                            />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Hardware and Networking "
+                            android:id="@+id/chb8"
+
+                            />
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Linux"
+                            android:id="@+id/chb9" />
+
+                        <CheckBox
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/activity_check_space"
+                            android:text="Other"
+                            android:id="@+id/chb10"
+
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#ff6565"
+                        android:text="*All field are required "/>
+
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_text_space"
+                        android:background="@drawable/btn_rounded"
+                        android:text="Register"
+                        android:textAllCaps="false"
+                        android:textColor="#FFFFFF"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:gravity="center_horizontal"
+                        android:text="Asterisc Computer Institute, Nagpur"
+                        android:textColor="#ee6fff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonColorPressed="#DCDCDC"
+        app:fab_addButtonPlusIconColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+         >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DAA520"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/telephone"
+            app:fab_size="mini"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#25D366"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/ic_whatsapp"
+            app:fab_size="mini"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#3b5998"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/ic_facebook"
+            app:fab_size="mini"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#DD2A7B"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/ic_instagram"
+            app:fab_size="mini"
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_youtube"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#c4302b"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/ic_youtube"
+            app:fab_size="mini"
+            />
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#3498DB"
+            app:fab_colorPressed="#fff"
+            app:fab_icon="@drawable/location"
+            app:fab_size="mini"
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>
